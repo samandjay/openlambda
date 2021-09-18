@@ -1,5 +1,5 @@
-// modes od mutation
-//Observe that these are very simple mutation modes.
+// models of mutation
+//Observe that these are very simple models.
 //Biologically one type of mutation is more common that other (transitions over trnasversions)
 
 // random
