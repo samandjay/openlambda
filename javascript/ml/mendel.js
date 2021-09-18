@@ -3,11 +3,11 @@
 //Biologically one type of mutation is more common that other (transitions over trnasversions)
 
 // random
-let random = bases => Math.max(1, Math.floor(Math.random()*bases))
+let random = bases => Math.max(1, Math.floor(Math.random()*(bases  + 1)))
 //cyclic
-let cyclic = (b, bases) =>  (b + 1) % bases + 1
+let cyclic = (b, bases) =>  b % bases + 1
 
-let mutate = (b, bases) => random( bases)
+let mutate = (b, bases) => cyclic(b, bases)
 let mutateRow = (row, bases) => row.map( b => b!=0?mutate(b, bases):b)
 
 let mutation = genome => ({
