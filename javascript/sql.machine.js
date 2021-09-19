@@ -5,6 +5,6 @@ let window = (size, start) => ` limit ${size} offset ${start}`
 let machine = (width, height, start, sep, alphabetSize) => 'select * from\n' + fields(width, sep, alphabetSize) + '\n'  + window(height, start)
 
 
-let [width, height, start, sep, alphabetSize] = [3, 1024, 0, ',\n',10]
+let [width, height, start, sep, alphabetSize] = [8, 1024, 0, ',\n',2]
 
 console.log( machine( width, height, start, sep, alphabetSize ) )
